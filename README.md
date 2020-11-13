@@ -22,9 +22,9 @@ go build qrcode.go
 ```
 
 参数：
-content 二维码内容
-size 像素尺寸
-level 容错级别 L/M/Q/H 四个级别
+content 二维码内容，
+size 像素尺寸，
+level 容错级别 L/M/Q/H 四个级别，
 output 输出图片路径
 
 
@@ -36,7 +36,7 @@ GET请求地址栏传参，直接输出图片到浏览器
 ```
 
 参数：
-server 开启服务器模式
+server 开启服务器模式，
 port 绑定端口
 
 请求：
