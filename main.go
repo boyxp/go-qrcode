@@ -4,8 +4,8 @@ import (
 	"os"
 	"fmt"
 	"flag"
-	"net/http"
 	"strconv"
+	"net/http"
 	"image/png"
 	"github.com/boombuler/barcode"
 	"github.com/boombuler/barcode/qr"
@@ -47,13 +47,13 @@ func gen(content string, output string, size int, level string) {
 func serv(port int) {
 	http.HandleFunc("/", render)
 
-    err := http.ListenAndServe(":"+strconv.Itoa(port), nil)
+	err := http.ListenAndServe(":"+strconv.Itoa(port), nil)
 	if err != nil {
 		fmt.Println("ListenAndServe: ", err)
 		return
 	}
 
-   <-make(chan int)
+	<-make(chan int)
 }
 
 func render(w http.ResponseWriter, r *http.Request) {
