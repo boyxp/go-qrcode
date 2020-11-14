@@ -29,18 +29,18 @@ output 输出图片路径
 
 
 # 服务器模式
-GET请求地址栏传参，直接输出图片到浏览器
+GET请求地址栏传参，直接输出图片到浏览器.如果需要对外服务绑定域名，可以用Nginx代理转发请求，配置见nginx_qrcode.conf
 
 ```
-./qrcode --server --port=8888 &
+./qrcode --server --port=9527 &
 ```
 
 参数：
 server 开启服务器模式，
-port 绑定端口
+port 绑定端口,默认9527
 
 请求：
 ```
-http://localhost:8888/?content=www.google.com&size=300&level=H
+http://localhost:9527/?content=www.google.com&size=300&level=H
 ```
 
