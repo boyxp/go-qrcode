@@ -1,7 +1,7 @@
 # Qrcode生成器
 Golang实现的二维码生成工具，支持命令行模式和服务器模式
 
-# 安装
+## 安装
 需要先安装golang 1.14以上
 
 1.克隆项目
@@ -14,7 +14,7 @@ git clone git@github.com:boyxp/qrcode.git
 go build qrcode.go
 ```
 
-# 命令行模式
+## 命令行模式
 二维码图片PNG输出到指定目录
 
 ```
@@ -28,7 +28,7 @@ level 容错级别 L/M/Q/H 四个级别，
 output 输出图片路径
 
 
-# 服务器模式
+## 服务器模式
 GET请求地址栏传参，直接输出图片到浏览器.如果需要对外服务绑定域名，可以用Nginx代理转发请求，配置见nginx_qrcode.conf
 
 ```
