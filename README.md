@@ -1,4 +1,4 @@
-# Qrcode生成器
+# Go-Qrcode生成器
 Golang实现的二维码生成工具，支持命令行模式和服务器模式
 
 ## 安装
@@ -6,7 +6,7 @@ Golang实现的二维码生成工具，支持命令行模式和服务器模式
 
 1.克隆项目
 ```
-git clone git@github.com:boyxp/qrcode.git
+git clone git@github.com:boyxp/go-qrcode.git
 ```
 
 2.编译
