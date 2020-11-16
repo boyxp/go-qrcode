@@ -11,7 +11,7 @@ git clone git@github.com:boyxp/go-qrcode.git
 
 2.编译
 ```
-go build qrcode.go
+cd go-qrcode && go build qrcode.go
 ```
 
 ## 命令行模式
